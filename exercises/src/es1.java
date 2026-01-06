@@ -5,6 +5,7 @@ void main() {
 
     System.out.println(multiply( 5,4));
     System.out.println(concatena("ciao",5));
+    System.out.println(Arrays.toString(concStr()));
 }
 
     public static int multiply(int num_1, int num_2) {
@@ -16,18 +17,13 @@ void main() {
     }
 
     public static String[] concStr(){
-
         String[] arr1 = {"Sono", "un", "array", "di", "caratteri"};
-
         String stringa2 = "nuovo";
-
         String[] newArr = new String[arr1.length + 1];
-
         System.arraycopy(arr1, 0, newArr, 0, 2);
-
-        newArr[2] = str1;
-        System.arraycopy(arr1, 2, newArr, 3, arr1.length - 2);
-
+        newArr[2] = stringa2;
+        newArr[3] = arr1[2];
+        newArr[4] = arr1[3];
+        newArr[5] = arr1[4];
         return newArr;
-
     }
